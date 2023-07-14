@@ -1,5 +1,5 @@
-/* import 'package:flutter/material.dart';
-import 'package:flutter_auth_example/services/auth_service.dart';
+import 'package:flutter/material.dart';
+import 'package:happy_paws/services/auth_service.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,15 +10,15 @@ class HomeScreen extends StatelessWidget {
     final authService = Provider.of<AuthService>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: const Text('Home'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text('You\'re in the Home Screen'),
+          const Text('You\'re in the Home Screen'),
           Center(
             child: ElevatedButton(
-              child: Text('Logout'),
+              child: const Text('Logout'),
               onPressed: () async {
                 await authService.signOut();
               },
@@ -29,4 +29,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
- */
