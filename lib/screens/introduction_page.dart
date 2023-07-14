@@ -182,9 +182,9 @@ class _IntroductionPageState extends State<IntroductionPage> {
           content: Text('esta es una prue asdaf adf'),
         )
       },
-      onSkip: () => {
-        print('prueba'),
-      },
+/*       onSkip: () => {
+        //print('prueba'),
+      }, */
       showNextButton: false,
 /*       showBackButton: false,
       showSkipButton: true,

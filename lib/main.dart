@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:happy_paws/screens/introduction_page.dart';
+import 'package:happy_paws/screens/login_screen.dart';
+import 'package:happy_paws/screens/registrer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: IntroductionPage(),
+      home: RegistrerScreen(),
     );
   }
 }
